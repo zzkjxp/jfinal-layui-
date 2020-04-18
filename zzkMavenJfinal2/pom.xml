@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zzkMavenJfinal2</groupId>
+  <artifactId>zzkMavenJfinal2</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>zzkMavenJfinal2 Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+  <dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>8.1.8</version>
+            <!--<scope>provided</scope>-->
+            <scope>compile</scope>
+   </dependency>   
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+     <!-- jfinal 核心包 -->  
+    <dependency>  
+        <groupId>com.jfinal</groupId>  
+        <artifactId>jfinal</artifactId>  
+        <version>3.4</version>  
+    </dependency>  
+    <dependency>  
+        <groupId>com.jfinal</groupId>  
+        <artifactId>cos</artifactId>  
+        <version>26Dec2008</version>  
+    </dependency>  
+<!-- 阿里巴巴druid数据连接池-->      
+    <dependency>  
+        <groupId>com.alibaba</groupId>  
+        <artifactId>druid</artifactId>  
+        <version>1.0.15</version>  
+    </dependency> 
+    <!-- 阿里fastjson包JSON转换-->
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>fastjson</artifactId>
+    <version>1.2.47</version>
+</dependency>  
+<!-- mysql驱动-->  
+    <dependency>  
+        <groupId>mysql</groupId>  
+        <artifactId>mysql-connector-java</artifactId>  
+        <version>5.1.20</version>  
+    </dependency>
+    <!-- sqlserver驱动-->  
+    <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>sqljdbc42</artifactId>
+            <version>4.2</version>
+        </dependency>
+<!-- servlet标准-->  
+    <dependency>  
+        <groupId>javax.servlet</groupId>  
+        <artifactId>javax.servlet-api</artifactId>  
+        <version>3.1.0</version>  
+    </dependency> 
+     <!-- log4j--> 
+    <dependency>  
+        <groupId>log4j</groupId>  
+        <artifactId>log4j</artifactId>  
+        <version>1.2.16</version>  
+    </dependency> 
+<!-- JSP -->
+<dependency>
+    <groupId>javax.servlet.jsp</groupId>
+    <artifactId>jsp-api</artifactId>
+    <version>2.2</version>
+    <scope>provided</scope>
+</dependency>
+  </dependencies>
+  <build>
+    <finalName>zzkMavenJfinal2</finalName>
+  </build>
+</project>
